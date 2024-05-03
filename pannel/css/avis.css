@@ -1,0 +1,95 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* Centrer le texte dans le corps de la page */
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    /* Centrer le conteneur principal */
+    padding: 20px;
+    text-align: left;
+    /* Aligner le texte à gauche à l'intérieur du conteneur */
+}
+
+.avis-container {
+    margin-bottom: 20px;
+}
+
+.avis {
+    background-color: #333333;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    /* Ajouter cette ligne pour que les labels occupent une ligne entière */
+    margin-bottom: 5px;
+    /* Espacement entre les labels et les champs */
+}
+
+input[type="text"],
+textarea {
+    width: calc(100% - 20px);
+    /* Utiliser calc() pour tenir compte de la largeur des bordures */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+    /* Inclure les bordures dans la largeur totale */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #333333;
+}

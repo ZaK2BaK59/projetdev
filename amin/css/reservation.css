@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+  text-align: center;
+  /* Centrer le contenu */
+  background: rgb(12, 11, 11);
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background: rgb(12, 11, 11);
+  transition: top 0.3s;
+  /* Transition pour lisser le mouvement */
+  z-index: 999;
+}
+
+.menu.scrolled {
+  top: -100px;
+}
+
+.menu ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 3rem;
+  position: relative;
+}
+
+.menu a {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 4px 0;
+}
+
+.menu a::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s transform ease;
+  transform: scale3d(0, 1, 1);
+  transform-origin: 0 50%;
+}
+
+.menu a:hover::before {
+  transform: scale3d(1, 1, 1);
+}
+
+.menu-3 a::before {
+  background: #604f0f;
+  transform-origin: 100% 50%;
+}
+
+.menu-3 a:hover::before {
+  transform-origin: 0 50%;
+}
+
+.menu a {
+  color: white;
+  /* Couleur des liens */
+}
+
+h1 {
+  margin-top: 200px;
+  margin-bottom: 300px;
+  margin-left: 100px;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  text-align: center;
+  color: #604f0f;
+}
+
+form {
+  max-width: 400px;
+  margin: 100px auto;
+  /* Auto pour les marges gauche et droite, 330px pour la marge supérieure */
+  background-color: #604f0f;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #f8f8f8;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  margin-bottom: 30%;
+  border-radius: 10px;
+}
+
+.animated-heading {
+  font-weight: bold;
+  font-family: 'Abril Fatface', display;
+  position: relative;
+  display: inline-block;
+}
+
+.animated-heading::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #604f0f;
+  bottom: -5px;
+  left: 0;
+}
+
+
+
+/* Style pour le titre */
+.animated-heading {
+  text-align: center;
+  font-size: 0px;
+  margin-bottom: 20px;
+}
+
+/*
+CSS to style Stripe credit card fields on PMPro checkout page
+Add this CSS to your theme's stylesheet.
+*/
+
+/* Base Stripe element styling*/
+.StripeElement {
+  background-color: #f8f8f8;
+  padding: 10px;
+  max-width: 90%;
+  border: 2px solid #e0dddd;
+}
+
+/* Set a red bottom border to field when empty */
+.StripeElement--empty {
+  border-bottom-color: #b22222;
+}
+
+/* Set a green bottom border to field when in focus */
+.StripeElement--focus {
+  border-bottom-color: #008000;
+}
+
+/* Set styling when form field data is invalid */
+.StripeElement--invalid {
+  background-color: #ffd90080;
+  border-color: #b22222;
+}
+
+/* Set styling when form field data is completed and valid */
+.StripeElement--complete {
+  background-color: #a39d9d;
+}
+
+/* Set credit card number input field width */
+form.pmpro_form #pmpro_payment_information_fields div#AccountNumber {
+  max-width: 270px;
+}
+
+/* Set expiry date input field width */
+form.pmpro_form #pmpro_payment_information_fields div#Expiry {
+  max-width: 110px;
+}
+
+/* Set CVC/CVV input field width */
+form.pmpro_form #pmpro_payment_information_fields div#CVV {
+  max-width: 110px;
+}
+
+#label {
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+#p {
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.bouton-reserver {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 50px;
+  background-color: rgb(12, 11, 11);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.bouton-reserver:hover {
+  background-color: #604f0f;
+}
+
+#ok {
+  border-radius: 20px;
+  /* Arrondir les coins des labels */
+}
